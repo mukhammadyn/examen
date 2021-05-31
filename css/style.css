@@ -2,7 +2,9 @@
   /* COLORS */
   --text-footer-color: #191919;
   --text-color-active: rgba(25, 25, 25, 0.7);
-  --btn-drop-footerfont-color: #00BAFC;
+  --btn-drop-footerfont-color: rgb(0, 186, 252);
+  --btn-drop-footerfont-color-80: rgba(0, 186, 252,0.8);
+  --btn-drop-footerfont-color-60: rgba(0, 186, 252,0.6);
   /* FONT */
   --site-font: 'Open Sans', "Arial", sans-serif;
 }
@@ -182,7 +184,7 @@ img {
   color 0.3s ease;
 }
 
-.call-me-link {
+.button {
   padding: 6px 16px;
   border: 3px solid transparent;
   border-radius: 5px;
@@ -191,21 +193,29 @@ img {
   line-height: 24px;
   font-weight: bold;
   color: #fff;
-  background-color: #00BAFC;
+  background-color: var(--btn-drop-footerfont-color);
   transition: background-color 0.3s ease,
   color 0.3s ease,
   opacity 0.3s ease;
 }
 
+.button:hover {
+  background-color: rgba(0, 186, 252, 0.8);
+}
+
+.button:active {
+  background-color: rgba(0, 186, 252, 0.6);
+}
+
 .call-me-link:hover {
-  border: 3px solid #00BAFC;
+  border: 3px solid var(--btn-drop-footerfont-color);
   background-color: #fff;
-  color: #00BAFC;
+  color: var(--btn-drop-footerfont-color);
 }
 
 .call-me-link:active {
   color: #fff;
-  background-color: #00BAFC;
+  background-color: var(--btn-drop-footerfont-color);
   opacity: 0.6;
 }
 
@@ -216,6 +226,12 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.promo-heading-left {
+  margin-right: 40px;
+  width: 470px;
 }
 
 .promo-title {
@@ -236,36 +252,20 @@ img {
 .promo-link {
   display: inline-block;
   margin-top: 16px;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #00BAFC;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.promo-link:hover {
-  background-color: rgba(0, 186, 252, 0.8);
-}
-
-.promo-link:active {
-  background-color: rgba(0, 186, 252, 0.6);
+  width: 232px;
+  text-align: center;
 }
 
 .promo-heading-iframe {
-  max-width: 458px;
-  border-radius: 4px;
+  width: 458px;
+  height: 258px;
+  border-radius: 5px;
 }
 
-.promo-heading-left {
-  margin-right: 172px;
-  width: 470px;
-}
 /* SERVICES */
-.services {
-  padding-top: 136px;
+.site-services {
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .services-head {
@@ -304,22 +304,28 @@ img {
 
 .services-card-item {
   width: 320px;
-  padding: 170px 87px 64px;
-  text-align: center;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.services-card-item:hover {
-  box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
-}
-
-.services-card-item:active {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .services-card-item:not(:first-child) {
   margin-left: 70px;
+}
+
+.services-card__link {
+  display: block;
+  padding: 170px 80px 24px;
+  text-align: center;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text-footer-color);
+}
+
+.services-card__link:hover {
+  box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+
+.services-card__link:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .make-web-site {
@@ -375,33 +381,24 @@ img {
 }
 
 .to-order-wrap {
-  margin: 0 auto;
-  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.order {
+.our-services-link:not(:last-child) {
   display: inline-block;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  background: #00BAFC;
-  color: #fff;
-  border-radius: 5px;
+  margin-right: 16px;
 }
 
-.our-services-link {
+.simple-link {
   display: inline-block;
-  margin-left: 16px;
-  color: #00BAFC;
+  color: var(--btn-drop-footerfont-color);
 }
 
 /* HOW WE WORK */
 .how-we-work {
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 56px;
   width: 719px;
 }
 
@@ -516,9 +513,7 @@ img {
 /* Ordered section */
 
 .order-section {
-  padding-top: 56px;
-  padding-bottom: 64px;
-  background-color: #00BAFC;
+  background-color: var(--btn-drop-footerfont-color);
 }
 
 .order-section-wrapper {
