@@ -397,12 +397,14 @@ img {
 }
 
 /* HOW WE WORK */
-.how-we-work {
+.how-we-work-head {
   margin: 0 auto;
   width: 719px;
 }
 
 .work-head-title {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 130%;
   font-weight: bold;
@@ -410,81 +412,89 @@ img {
 }
 
 .work-head-text {
+  margin: 16px 0 0 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
 }
 
 .how-we-work-list {
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .how-we-work-item {
   display: flex;
-  justify-content: center;
+  margin: 50px auto 0;
+  justify-content: space-between;
   align-items: center;
-  margin-right: -62px;
   width: 830px;
+}
+
+.how-we-work-item:first-child {
+  margin: 12px auto 0;
+}
+
+.how-we-work-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .work-item-1::before {
   display: block;
-  margin-right: 32px;
   content: "";
   width: 300px;
   height: 280px;
   background-image: url(/img/how-we-work-1.svg);
-  background-size: content;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
 }
 
-.work-item-2::after {
+.work-item-2::before {
   display: block;
-  margin-right: 32px;
   content: "";
   width: 300px;
-  height: 280px;
+  height: 225px;
   background-image: url(/img/how-we-work-2.svg);
-  background-size: content;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
 }
 
 .work-item-3::before {
   display: block;
-  margin-right: 32px;
   content: "";
   width: 300px;
-  height: 280px;
+  height: 259px;
   background-image: url(/img/how-we-work-3.svg);
-  background-size: content;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
 }
 
-.work-item-4::after {
+.work-item-4::before {
   display: block;
-  margin-right: 32px;
   content: "";
   width: 300px;
-  height: 280px;
+  height: 171px;
   background-image: url(/img/how-we-work-4.svg);
-  background-size: content;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
 }
 
 .work-item-5::before {
   display: block;
-  margin-right: 32px;
   content: "";
   width: 300px;
-  height: 280px;
+  height: 232px;
   background-image: url(/img/how-we-work-5.svg);
-  background-size: content;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -505,9 +515,10 @@ img {
   line-height: 24px;
 }
 
-.how-we-work-btn {
-  margin: 15px auto 0;
-  width: 167px;
+.how-we-work__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Ordered section */
