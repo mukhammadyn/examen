@@ -56,9 +56,9 @@
   
         </section>
   
-        <section class="services site-services">
+        <section class="services site-services" id="xizmatlar">
   
-          <div class="services-head" id="xizmatlar">
+          <div class="services-head">
             <h2 class="services-title">Xizmatlar</h2>
             <p class="services-content">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
           </div>
@@ -149,45 +149,72 @@
 
       <section class="order-section site-services" id="buyurtma-berish">
         <div class="order-section-wrapper container">
-          <div class="order-section-title-wrap">
-            <h2 class="order-section-title">Buyurtma berish</h2>
-              <p class="order-section-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
-          </div>
-          
-          <form class="order-section-form" action="https://echo.htmlacademy.ru" method="POST">
+          <h2 class="order-section-title">Buyurtma berish</h2>
+          <p class="order-section-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+        </div>  
+
+        <form class="order-section-form container" action="https://echo.htmlacademy.ru" method="POST">
             
-            <label>
-              <input class="order-input-name order-inputs" type="text" name="user_name" placeholder="Ismingiz" required>
-            </label>
+          <label class="visually-hidden" for="input_name">Your name</label>
+          <input class="order-input-name order-inputs" type="text" name="user_name" id="input_name" placeholder="Ismingiz" required>
+          
 
-            <label>
-              <input class="order-input-tel order-inputs" type="tel" name="user_name" placeholder="Telefon raqamingiz" required>
-            </label>
+          <label class="visually-hidden" for="phone_number">Your phone number</label>
+          <input class="order-input-tel order-inputs" type="tel" name="user_phone" id="phone_number" placeholder="Telefon raqamingiz" required>
+          
 
-            <label>
-              <select class="order-input-order order-inputs" type="select" name="user_name" required>
-                <option value="web_site">Web-site</option>
-                <option value="telegram-bot">Telegram-bot</option>
-                <option value="smm">SMM</option>
-                <option value="grafic_design">Grafik dizayn</option>
-                <option value="crm">CRM tizim</option>
-              </select>
-            </label>
+          <label class="visually-hidden" for="service_type">Type of service</label>
+          <select class="order-input-order order-inputs" type="select" name="service_type" id="service_type" required>
 
-            <button class="order order-submit" type="submit">Buyurtma berish</button>
+            <option value="" selected disabled>Xizmat turi</option>
+            <option value="web_site">Web-site</option>
+            <option value="telegram-bot">Telegram-bot</option>
+            <option value="smm">SMM</option>
+            <option value="grafic_design">Grafik dizayn</option>
+            <option value="crm">CRM tizim</option>
+            </select>
+          
+          <div class="submit-btn-wrap">
+            <button class="button submit-btn" type="submit">Buyurtma berish
+            </button>
+          </div>
   
-          </form>
-        </div>
+        </form>
         
-
       </section>
 
   </main>
   
-  <footer class="site-footer">
+  <footer class="site-footer site-services">
   
     <section class="site-footer-wrapper container">
         
+      <ul class="footer-list">
+
+        <li class="footer-item">
+          <p class="footer-item__content footer-item__content-title">Copyright 2020</p>
+          <p class="footer-item__content">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.</p>
+        </li>
+
+        <li class="footer-item">
+          <p class="footer-item__content footer-item__content-title">Sayt sahifalari</p>
+          <p class="footer-item__content">Bosh sahifa</p>
+          <p class="footer-item__content">Xizmatlar</p>
+          <p class="footer-item__content">Portfolio</p>
+          <p class="footer-item__content">Jamoa</p>
+          <p class="footer-item__content">Blog</p>
+          <p class="footer-item__content">Kontaktlar</p>
+        </li>
+
+        <li class="footer-item">
+          <p class="footer-item__content footer-item__content-title">Biz internetda</p>
+          <a class="footer-item__content footer-item__content-link" href="https://web.telegram.org">Telegram</a>
+          <a class="footer-item__content footer-item__content-link" href="https://www.facebook.com">Facebook</a>
+          <a class="footer-item__content footer-item__content-link" href="https://www.instagram.com">Instagram</a>
+        </li>
+        
+      </ul>
+
     </section>
   
   </footer>
