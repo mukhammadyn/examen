@@ -8,19 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize-mini.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-minify.css">
 </head>
 <body>
 
   <header class="site-header header">
+    <h1 class="visually-hidden">Biznesingizni biz bilan rivojlaniring</h1>
     <section class="site-header-wrapper container">
       <h2 class="visually-hidden">Bosh sahifa</h2>
       <a class="header-logo__link header-logo" href="index.html"><img class="header-logo__img" src="img/icon/site-logo.svg" alt="site logo" width="59" height="20"></a>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-list-item bosh-sahifa-link"><a class="list-item-link list-item-link__active" href="bosh-sahifa.html">Bosh sahifa</a></li>
+          <li class="nav-list-item bosh-sahifa-link"><a class="list-item-link list-item-link__active" href="index.html">Bosh sahifa</a></li>
 
-          <li class="nav-list-item"><a class="list-item-link xizmatlar-link" href="#xizmatlar">Xizmatlar</a>
+          <li class="nav-list-item"><a class="list-item-link xizmatlar-link" href="xizmatlar.html">Xizmatlar</a>
             <ul class="list-drop">
               <li class="list-drop-item"><a href="#veb-sayt" class="drop-item-link">Vebsayt</a></li>
               <li class="list-drop-item"><a href="#telegram-bot" class="drop-item-link">Telegram bot</a></li>
@@ -44,19 +45,20 @@
   <main class="site-main">
       
       <section class="site-main__top__container container">
+        <h2 class="visually-hidden">Biznesingiz biz bilan gullaydi</h2>
         <section class="promo-heading">
           <div class="promo-heading-left">
-            <h1 class="promo-title">Biznesingizni keyingi bosqichga
-              olib chiqing</h1>
+            <h2 class="promo-title">Biznesingizni keyingi bosqichga
+              olib chiqing</h2>
             <p class="promo-content">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
             <a href="#xizmatlar" class="button promo-link">Xizmatlar bilan tanishish</a>
           </div>
   
-          <iframe class="promo-heading-iframe" src="https://www.youtube-nocookie.com/embed/6_pru8U2RmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="promo-heading-iframe" src="https://www.youtube-nocookie.com/embed/6_pru8U2RmM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
         </section>
   
-        <section class="services site-services" id="xizmatlar">
+        <section class="services-index site-services" id="xizmatlar">
   
           <div class="services-head">
             <h2 class="services-title">Xizmatlar</h2>
@@ -102,7 +104,7 @@
   
         </section>
   
-        <section class="how-we-work site-services">
+        <section class="how-we-work site-services" >
           <div class="how-we-work-head">
             <h2 class="work-head-title">Biz qanday ishlaymiz?</h2>
             <p class="work-head-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
@@ -164,7 +166,7 @@
           
 
           <label class="visually-hidden" for="service_type">Type of service</label>
-          <select class="order-input-order order-inputs" type="select" name="service_type" id="service_type" required>
+          <select class="order-input-order order-inputs" name="service_type" id="service_type" required>
 
             <option value="" selected disabled>Xizmat turi</option>
             <option value="web_site">Web-site</option>
@@ -188,33 +190,33 @@
   <footer class="site-footer site-services">
   
     <section class="site-footer-wrapper container">
-        
-      <ul class="footer-list">
+        <h2 class="visually-hidden">Bizda hamma zamonaviy kasb egalari mavjud</h2>
+        <section class="footer-copyright">
+          <h2 class="visually-hidden">Biznesingizni biz yuritib beramiz</h2>
+          <p class="footer-copyright__title footer-title">Copyright 2020</p>
+          <p class="footer-copyright__content">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.</p>
+        </section>
 
-        <li class="footer-item">
-          <p class="footer-item__content footer-item__content-title">Copyright 2020</p>
-          <p class="footer-item__content">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.</p>
-        </li>
+        <section class="footer-site-pages">
+          <h2 class="footer-site-pages__title footer-title">Sayt sahifalari</h2>
+          <ul class="footer-site-pages__list">
+            <li class="footer-site-pages__item"><a class="footer-site-pages__link footer-content-transform" href="#bosh-sahifa">Bosh sahifa</a></li>
+            <li class="footer-site-pages__item">          <a class="footer-site-pages__link footer-content-transform" href="#xizmatlar">Xizmatlar</a></li>
+            <li class="footer-site-pages__item">          <a class="footer-site-pages__link footer-content-transform" href="portfolio.html">Portfolio</a></li>
+            <li class="footer-site-pages__item">          <a class="footer-site-pages__link footer-content-transform" href="jamoa.html">Jamoa</a></li>
+            <li class="footer-site-pages__item">          <a class="footer-site-pages__link footer-content-transform" href="blog.html">Blog</a></li>
+            <li class="footer-site-pages__item">          <a class="footer-site-pages__link footer-content-transform" href="kontaktlar.html">Kontaktlar</a></li>
+          </ul>
+        </section>
 
-        <li class="footer-item">
-          <p class="footer-item__content footer-item__content-title">Sayt sahifalari</p>
-          <p class="footer-item__content">Bosh sahifa</p>
-          <p class="footer-item__content">Xizmatlar</p>
-          <p class="footer-item__content">Portfolio</p>
-          <p class="footer-item__content">Jamoa</p>
-          <p class="footer-item__content">Blog</p>
-          <p class="footer-item__content">Kontaktlar</p>
-        </li>
-
-        <li class="footer-item">
-          <p class="footer-item__content footer-item__content-title">Biz internetda</p>
-          <a class="footer-item__content footer-item__content-link" href="https://web.telegram.org">Telegram</a>
-          <a class="footer-item__content footer-item__content-link" href="https://www.facebook.com">Facebook</a>
-          <a class="footer-item__content footer-item__content-link" href="https://www.instagram.com">Instagram</a>
-        </li>
-        
-      </ul>
-
+        <section class="footer-social">
+          <h2 class="footer-social__title footer-title">Biz internetda</h2>
+          <ul class="footer-social__list">
+            <li class="footer-social__item"><a class="footer-social__link social__link-telegram footer-content-transform" href="https://web.telegram.org">Telegram</a></li>
+            <li class="footer-social__item">          <a class="footer-social__link social__link-facebook footer-content-transform" href="https://www.facebook.com">Facebook</a></li>
+            <li class="footer-social__item">          <a class="footer-social__link social__link-instagram footer-content-transform" href="https://www.instagram.com">Instagram</a></li>
+          </ul>
+        </section>
     </section>
   
   </footer>
